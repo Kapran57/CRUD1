@@ -1,13 +1,11 @@
 package com.example.namber2.entity;
 
-import com.example.namber2.enum1.Role;
+import com.example.namber2.enums.Role;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-
-
 
 @Entity
 @Table(name = "staff")

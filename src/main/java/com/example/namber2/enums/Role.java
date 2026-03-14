@@ -1,10 +1,10 @@
-package com.example.namber2.enum1;
+package com.example.namber2.enums;
 
 import lombok.Getter;
 
 @Getter
 public enum Role {
-    MANAGER("Менеджер"),
+    USER("Пользователь"),
     ADMIN("Администратор");
 
     private final String displayName;
@@ -26,7 +26,7 @@ public enum Role {
         try {
             return Role.valueOf(role.toUpperCase());
         } catch (IllegalArgumentException e) {
-            throw new IllegalArgumentException("Роль может быть только Менеджер или Администратор");
+            throw new IllegalArgumentException("Роль может быть только Пользователь или Администратор");
         }
     }
 }
